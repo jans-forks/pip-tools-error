@@ -1,0 +1,26 @@
+# base framework
+Django==3.2.4  # https://www.djangoproject.com/
+django-cors-headers==3.7.0  # https://github.com/adamchainz/django-cors-headers
+django-extensions==3.1.0  # https://github.com/django-extensions/django-extensions
+django-simple-history==2.12.0  # https://github.com/jazzband/django-simple-history
+django-role-permissions==3.1.1  # https://pypi.org/project/django-role-permissions/
+django-anymail[amazon_ses]==8.2  # https://github.com/anymail/django-anymail
+django-environ==0.4.5  # https://github.com/joke2k/django-environ
+
+# graphql implementation
+ariadne==0.13.0  # https://ariadnegraphql.org/
+
+# authorisation
+# git+https://github.com/svenvintges/django-ariadne-jwt#egg=django-ariadne-jwt-gaid
+git+https://github.com/MrClemRkz/django-ariadne-jwt#egg=django-ariadne-jwt-gaid
+
+# version 1.7 is required for issue on package django-ariadne-jwt-gaid
+# TODO can we fix this in upstream MrClemRkz/django-ariadne-jwt?
+# https://github.com/flavors/django-graphql-jwt/issues/241
+PyJWT==1.7.1
+
+# yaml parser
+PyYAML==5.4.1  # https://pypi.org/project/pyaml/
+
+# for 2FA
+pyotp==2.6.0  # https://pyauth.github.io/pyotp/

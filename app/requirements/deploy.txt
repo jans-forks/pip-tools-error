@@ -1,0 +1,4 @@
+gunicorn==20.1.0  # https://github.com/benoitc/gunicorn
+
+# deployment version of psycopg
+psycopg2==2.8.6  # https://github.com/psycopg/psycopg2

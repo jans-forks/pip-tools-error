@@ -1,0 +1,13 @@
+repos:
+
+  # pip tools
+  - repo: https://github.com/jazzband/pip-tools
+    rev: 5.3.1
+    hooks:
+      - id: pip-compile
+        name: pip-compile requirements-dev
+        verbose: true
+        args:
+        - "app/requirements/base.txt"
+        files: ^app/requirements/base\.(in|txt)$
+
