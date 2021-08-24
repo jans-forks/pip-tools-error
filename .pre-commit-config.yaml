@@ -4,10 +4,19 @@ repos:
   - repo: https://github.com/jazzband/pip-tools
     rev: 5.3.1
     hooks:
+      # - id: pip-compile
+      #   name: pip-compile app dir
+      #   verbose: true
+      #   args:
+      #   - "app/requirements/base.txt"
+      #   - "--output-file=compiled.txt"
+      #   files: ^app/requirements/base\.(in|txt)$
+
       - id: pip-compile
-        name: pip-compile requirements-dev
+        name: pip-compile root dir
         verbose: true
         args:
-        - "app/requirements/base.txt"
-        files: ^app/requirements/base\.(in|txt)$
+        - "root.txt"
+        - "--output-file=compiled.txt"
+        files: ^root\.txt$
 
